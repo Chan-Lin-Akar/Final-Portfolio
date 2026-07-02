@@ -1,0 +1,712 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+
+html,body {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    
+
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px 20px;
+    background: transparent;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    position: fixed;
+    width: 80%;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -3rem;
+    border-radius: 10px;
+    border: 3px solid rgba(10, 9, 9, 0.18);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    z-index: 1;
+
+}
+
+ul {
+    position: relative;
+    top: -17px;
+    
+}
+
+.navbar ul li {
+    display: inline-block;
+    
+}
+
+.navbar ul li a {
+    display: block;
+    text-transform: uppercase;
+    color: black;
+    font-size: 15px;
+    font-family: 'Railway', sans-serif;
+    Letter-spacing: 2px;;
+    font-weight: 600;
+    padding: 25px;
+
+
+}
+
+.navbar ul li a:hover {
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}
+
+
+.home {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 10%;
+
+}
+
+.home-content {
+    max-width: 700px;
+
+}
+
+.home-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-family: 'Railway', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+/* Animation for the h1 element on the home page */
+.home-content h1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: .5s;
+
+}
+
+/* Animation for the h3 element on the home page */
+.home-content h3 {
+    position: relative;
+    font-size: 32px;
+    font-family: 'Railway', sans-serif;
+    font-weight: 700;
+    color: rgb(26, 26, 119);
+
+}
+
+.home-content h3::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1s;
+
+}
+
+
+
+.home-content p {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Railway', sans-serif;
+    margin: 20px 0 40px;
+
+}
+
+/* Animation for the p element on the home page */
+
+.home-content p::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.3s;
+
+}
+
+
+.home-content .about-me-box {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+
+
+}
+
+/* Animation for the about-me-box element on the home page */
+
+.home-content .about-me-box::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    animation: showRight 1s ease forwards;
+    animation-delay: 1.6s;
+    z-index: 2;
+
+
+}
+
+.about-me-box a {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: blue;
+    border: 2px solid blue;
+    border-radius: 8px;
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-family: 'Railway', sans-serif;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+
+
+
+}
+
+.about-me-box a:hover {
+    color: blue;
+}
+
+.about-me-box a:nth-child(2) {
+    background: transparent;
+    color: blue;
+}
+
+.about-me-box a:nth-child(2):hover {
+    color: white;
+}
+
+.about-me-box a:nth-child(2)::before {
+    background: blue;
+
+}
+
+/* Animation for the about-me-box a element on the home page */
+.about-me-box a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: white;
+    z-index: -1;
+    transition: .5s;
+
+}
+
+.about-me-box a:hover::before {
+    width: 100%;
+}
+
+@keyframes showRight {
+    100% {
+        width: 0;
+
+    }
+}
+
+/*
+
+ About Page Code
+
+*/
+
+.about {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    
+}
+
+.about-content {
+    max-width: 600px;
+    
+    position: absolute;
+    left: 50%;
+}
+
+.about-content h1 {
+    font-size: 56px;
+    font-family: 'Railway', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.about-content p {
+    position: relative;
+    font-size: 20px;
+    font-family: 'Railway', sans-serif;
+    margin: 20px 0 40px;
+    line-height: 1.7;
+}
+
+.about-img {
+    display: flex;
+    width: 20rem;
+    height: 27rem;
+    position: absolute;
+    bottom: 25%;
+    left: 15%;
+    box-shadow: 25px 24px 15px 0px rgba(0, 0, 0, 0.20);
+    border-radius: 8px; 
+    
+}
+
+.about-img:hover {
+    transform: translate(5px, 12px);
+    box-shadow: 25px 24px 15px 0px rgba(0, 0, 0, 0.30);
+}
+
+.projects {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 2rem;
+    box-sizing: border-box;
+   
+}
+
+.container {
+    position: relative;
+    transform: skewY(11deg); /* rotation like y direction*/
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+
+    
+}
+
+.projects-title {
+    transform: rotate(-90deg);
+    font-size: 56px;
+    font-family: 'Railway', sans-serif;
+    position: absolute;
+    display: block;
+    left: -15%;
+
+    
+}
+
+
+.projects .unit2 {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    
+    
+}
+
+/* hover animation */
+.unit2:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+
+.projects .unit3 {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    z-index: -1;
+
+
+}
+
+.unit3:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+.projects .resume {
+    width: 300px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    z-index: -2;
+    
+}
+
+.resume:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.2), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.image1 {
+    display: block;
+    width: 100%;
+    
+}
+
+.image2 {
+    display: block;
+    width: 100%;
+    
+}
+
+.image3 {
+    display: block;
+    width: 100%;
+    
+}
+
+.unit2-content {
+    position: relative;
+    top: 9px;
+    font-family: 'Railway', sans-serif;
+}
+
+
+.unit2-content h1 {
+    line-height: 2;
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 3px;
+   
+}
+
+.unit2-content p {
+    margin-top: 4%;
+    padding: 5px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.unit2-content a {
+    margin-left: 85%;
+    position: absolute;
+    top: 105%;
+    
+}
+
+.unit2-content a svg {
+    height: 32px;
+    width: 32px;
+
+}
+
+/* unit3 content */
+
+.unit3-content {
+    position: relative;
+    top: 9px;
+    font-family: 'Railway', sans-serif;
+}
+
+
+.unit3-content h1 {
+    line-height: 2;
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 3px;
+   
+}
+
+.unit3-content p {
+    margin-top: 4%;
+    padding: 5px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.unit3-content a {
+    margin-left: 85%;
+    position: absolute;
+    top: 105%;
+    
+}
+
+.unit3-content a svg {
+    height: 32px;
+    width: 32px;
+
+}
+
+/* Resume Content */
+
+.resume-content {
+    position: relative;
+    top: 9px;
+    font-family: 'Railway', sans-serif;
+}
+
+
+.resume-content h1 {
+    line-height: 2;
+    background: black;
+    color: white;
+    width: 100%;
+    padding: 3px;
+   
+}
+
+.resume-content p {
+    margin-top: 4%;
+    padding: 5px;
+    font-size: 13px;
+    line-height: 1.5;
+}
+
+.resume-content a {
+    margin-left: 85%;
+    position: absolute;
+    top: 105%;
+    
+}
+
+.resume-content a svg {
+    height: 32px;
+    width: 32px;
+
+}
+
+
+
+/* Contact Page Code */
+
+.contact {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    box-sizing: border-box;
+    
+    font-family: 'Railway', sans-serif;
+}
+
+.contact h1 {
+    font-size: 56px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 5%;
+}
+
+.contact-form {
+    width: 400px;
+    height: 400px;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 5px;
+    padding: 20px;
+    display: flex;
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-form h2 {
+    font-size: 24px;
+    font-weight: 700;
+    position: relative;
+    top: 1%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-form .inputBox {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+
+}
+
+/* INPUT ANIMATION*/
+.contact-form .inputBox input,
+.contact-form .inputBox textarea {
+    width: 100%;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 2px solid black;
+    outline: none;
+    
+
+}
+
+.contact-form .inputBox span {
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 16px;
+    margin: 10px 0;
+    pointer-events: none;
+    transition: 0.5s;
+    color: blue;
+
+}
+
+/* HIGH UP TO TRANSFORM*/
+.contact-form .inputBox input:focus ~ span,
+.contact-form .inputBox input:valid ~ span,
+.contact-form .inputBox textarea:focus ~ span,
+.contact-form .inputBox textarea:valid ~ span {
+    color: #007bff;
+    font-size: 12px;
+    transform: translateY(-20px);
+}
+
+.contact-form .inputBox input[type="submit"] {
+    background: blue;
+    color: white;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: 0.5s;
+
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: relative;
+    right: -35%;
+    
+    
+
+
+}
+
+.contact-info a svg {
+    height: 52px;
+    width: 52px;
+    
+
+}
+
+.contact-info a svg:hover {
+    transform: translateY(-10px);
+    transform: scale(1.2);
+    transition: 0.5s ease-in-out;
+}
+
+/* Case Studies Page Code */
+
+.case-studies {
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px 10px;
+    padding: 2rem;
+    box-sizing: border-box;
+    
+    font-family: 'Railway', sans-serif;
+}
+
+.case-studies-title {
+    display: block;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.case-studies .title1 {
+    position: relative;
+    top: 15%;
+    left: 5%;
+    font-size: 100;
+}
+
+.case-studies .title2 {
+    position: relative;
+    top: 18%;
+    left: 5%;
+    font-size: 150;
+    color: blue;
+}
+
+.case-studies-content  p {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: 9%;
+    padding: 3rem;
+    line-height: 2;
+}
+
+.case-studies-content  .sources{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+    top: 10%;
+    padding: 3rem;
+    line-height: 2;
+}

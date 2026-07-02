@@ -1,0 +1,232 @@
+ul {
+    position: relative;
+    transform: skewY(-15deg);
+    padding-top: 20%;
+    justify-items: center;
+}
+
+li {
+    position: relative;
+    list-style: none;
+    width: 200px;
+    padding: 15px;
+    background: black;
+    z-index: calc(1 * var(--i));
+    transition: 0.5s;
+
+
+}
+
+li:hover {
+    background: red;
+    transform: translateX(-50px);
+
+
+}
+
+li::before {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: attr(data-icon);
+    position: absolute;
+    top: 0;
+    left: -40px;
+    width: 40px;
+    height: 100%;
+    background: rgb(143, 15, 155);
+    transform-origin: right;
+    transform: skewY(45deg);
+    transition: 0.5s;
+
+
+}
+
+li:hover::before {
+    background: rgb(148, 122, 122);
+
+
+}
+
+li::after {
+    content: "";
+    position: absolute;
+    top: -40px;
+    left: 0px;
+    width: 100%;
+    height: 40px;
+    background: rgb(46, 126, 108);
+    transform-origin: bottom;
+    transform: skewX(45deg);
+    transition: 0.5s;
+}
+
+li:hover::after {
+    background: red;
+
+}
+
+li a {
+    text-decoration: none;
+    color: blue;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: 0.5s;
+}
+
+li:hover a {
+    color: white;
+
+
+}
+
+li:last-child::after {
+    box-shadow: -120px 120px 20px gray;
+    
+}
+
+
+.logo {
+    font-size: 30px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+li {
+    display: inline-block;
+    width: fit-content;
+    background: purple;
+    ;
+}
+
+li a {
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+    margin-right: 25px;
+}
+
+li a:hover {
+    color: black;
+    background-size: auto;
+    background-color: purple;
+
+
+}
+
+button {
+    width: 90px;
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    margin-left: 10px;
+    padding: 10px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: blueviolet;
+
+}
+
+.type {
+    font-size: 50px;
+    font-weight: 700;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 4px solid white;
+    color: black;
+    display: grid;
+    align-items: center;
+    place-items: center;
+    padding-top: 20%;
+    animation: typing 4s steps(22), cursor .6s step-end infinite alternate;
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content;
+}
+
+
+@keyframes cursor {
+    50% {
+        border-color: transparent;
+
+    }
+
+
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+
+    }
+
+    50% {
+        width: 100%;
+    }
+
+
+
+
+
+}
+
+.AboutPage {
+    background-color: rgb(39, 37, 35);
+    width: 100%;
+    height: 900px;
+    color: white;
+}
+
+
+
+
+.aboutName {
+    display: block;
+    font-size: 30px;
+    padding-top: 20px;
+    margin-left: 60px;
+    margin-top: 60px;
+    z-index: 10;
+    position: relative;
+    top: 7em;
+    left: 3%;
+    width: fit-content;
+
+
+
+}
+
+.myFace {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 400px;
+    z-index: 1;
+    position: relative;
+    top: -30em;
+}
+
+.aboutMe {
+    display: block;
+    font-size: 20px;
+    z-index: 10;
+    position: relative;
+    top: 3em;
+    left: 67%;
+    line-height: 2em;
+    width: fit-content;
+
+}
+
+
+.aboutMe h1 {
+    line-height: 2.5em;
+}

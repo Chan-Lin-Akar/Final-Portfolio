@@ -1,0 +1,108 @@
+ <ul>
+            <li style="--i:6;" data-icon="&#xf015">
+            <a href="#">Home</a>
+        </li>
+        <li style="--i:5;" data-icon="&#xf2bb">
+            <a href="#">About</a>
+        </li>
+        <li style="--i:4;" data-icon="&#xf03a">
+            <a href="#">Services</a>
+        </li>
+        <li style="--i:3;" data-icon="&#xf07c">
+            <a href="#">Profolio</a>
+        </li>
+        <li style="--i:2;" data-icon="&#xe553">
+            <a href="#">Our Team</a>
+        </li>
+        <li style="--i:1;" data-icon="&#x40">
+            <a href="#">Contact</a>
+        </li>
+        </ul>
+
+
+        <h1 class="type">Welcome to the meeting!</h1>
+
+    <div class="AboutPage">
+        <div class="nameImg">
+            <div class="aboutName">
+                <h1>I'm</h1>
+                <h1>Chan Lin Akar</h1>
+            </div>
+            <div class="aboutMe">
+                <h1>ABOUT ME</h1>
+                <p>I am a rising senior. I am 17 years old.I am passionate about technology <br> and innovation. I like to play video games and watch <br>documentaries. There are many things I have learned <br>in my high school. In that year, I have <br> joined many clubs and involved in various activities. I <br> like to know many people from different backgrounds. <br> I will continue to connect with others in the future. </p>
+            </div>
+            <img src="aboutImage.png" alt="My Face" class="myFace">
+
+            let aboutNav = document.querySelector('.about-nav');
+let homePage = document.querySelector('.home');
+let aboutPage = document.querySelector('.about');
+
+aboutNav.addEventListener('click', function() {
+    homePage.style.display = 'none';
+    aboutPage.style.display = 'block';
+
+})
+
+.about {
+    
+    height: 100vh;
+    display: flex;
+    align-items:center;
+    padding-top: 0;
+    padding-bottom: 0;
+    padding-left: 50%;
+
+}
+    
+
+
+
+.about-content {
+    max-width: 700px;
+    z-index: -1;
+
+
+}
+
+.about-content h1 {
+    position: relative;
+    font-size: 56px;
+    font-family: 'Railway', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+
+}
+
+
+
+.about-content p {
+    position: relative;
+    font-size: 16px;
+    font-family: 'Railway', sans-serif;
+    margin: 20px 0 40px;
+    line-height: 1.7;
+
+}
+
+.aboutImage {
+    width: 300px;
+    height: 60vh;
+    display: flex;
+    position: relative;
+    right: 160%;
+    z-index: -1;
+
+
+
+}
+
+
+
+
+
+
+
+
+        </div>
+    </div>
